@@ -1,0 +1,373 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Containers */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  background: #d41919;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease;
+}
+
+.full-screen {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #0509ee, #0d51d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  font-size: 1.8rem;
+  color: #555;
+  margin: 15px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(45deg, #42e695, #3bb2b8);
+  color: #433093;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #42e695;
+  box-shadow: 0 0 5px rgba(66, 230, 149, 0.5);
+}
+
+/* Habit Tracker */
+/* App.css */
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0fe745, #e9ecef);
+  color: #333;
+}
+
+/* Main container styling */
+.add-habit {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 105px;
+  background: #b4d5df;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling */
+.add-habit h1 {
+  color: #0d1305;
+  margin-bottom: 20px;
+}
+
+/* Form section */
+.habit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.habit-form input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.habit-form button {
+  background-color: #04e20b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.habit-form button:hover {
+  background-color: #2ac4c4;
+}
+
+/* Habit list styling */
+.habit-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.habit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fafafa5f;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.habit-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.habit-details button {
+  background-color: #ee3023;
+  color: rgb(249, 235, 235);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.habit-details button:hover {
+  background-color: #903636;
+}
+
+/* Weekly tracker styling */
+.week-tracker {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.week-tracker label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.week-tracker input[type="checkbox"] {
+  margin-bottom: 5px;
+  transform: scale(1.2);
+}
+
+/* No habits message */
+.habit-list p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+/* Dashboard */
+.dashboard {
+  padding: 30px;
+  text-align: center;
+}
+
+.habits-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.habit-card {
+  background: linear-gradient(135deg, #ffecd2, #41c9ff);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.habit-card h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.habit-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Login Page */
+/* Body with Background Image */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/021/957/826/non_2x/illustration-alarm-clock-rings-on-white-background-concept-of-work-time-management-man-has-a-lot-of-tasks-and-little-time-free-vector.jpg'); /* Replace with your actual path */
+  background-size: cover; /* Makes the image cover the entire viewport */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition of the image */
+  display: flex; /* Flexbox for centering the login box */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Page */
+.login-page {
+  width: 100%;
+  max-width: 400px;
+  background: #b4d5df;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease;
+  text-align: center;
+}
+
+.login-page h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #f28d2f, #f90e2e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #42e695;
+  box-shadow: 0 0 5px rgba(66, 230, 149, 0.5);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #42e695, #3bb2b8);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .login-page {
+    padding: 20px;
+  }
+
+  .login-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .login-form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
