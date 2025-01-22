@@ -47,7 +47,7 @@ Currently, two official plugins are available:
    ```
 2. Navigate to the project directory:  
    ```bash
-   cd habit-tracker
+   cd habit
    ```
 3. Install dependencies:  
    ```bash
